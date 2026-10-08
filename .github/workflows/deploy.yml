@@ -44,6 +44,6 @@ jobs:
           ssh-keyscan -p "$SSH_PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts
 
           # Synchroniser le dossier dist/ avec le dossier racine du site sur le VPS
-          rsync -avz --delete \
+          rsync -avz --delete --no-owner --no-group \
             -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$TARGET_DIR"
