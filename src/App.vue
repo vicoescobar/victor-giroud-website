@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import profileImg from './assets/profile_pic.jpg'
+import profileImg from './assets/profil_pic.jpg'
 
 const isEmailCopied = ref(false)
 const isPhoneCopied = ref(false)

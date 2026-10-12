@@ -45,5 +45,6 @@ jobs:
 
           # Synchroniser le dossier dist/ avec le dossier racine du site sur le VPS
           rsync -avz --delete --no-owner --no-group \
+            --exclude '.well-known' \
             -e "ssh -p $SSH_PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$TARGET_DIR"
