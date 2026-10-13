@@ -19,6 +19,14 @@ defineProps({
   linkedinDisplay: {
     type: String,
     default: () => contactInfo.linkedinDisplay
+  },
+  githubUrl: {
+    type: String,
+    default: () => contactInfo.githubUrl
+  },
+  githubDisplay: {
+    type: String,
+    default: () => contactInfo.githubDisplay
   }
 })
 
@@ -93,6 +101,18 @@ const copyPhone = async (phoneToCopy) => {
               Ouvrir le profil ↗
             </a>
           </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-channel-card">
+            <span class="channel-icon">
+              <AppIcon name="github" alt="GitHub" :size="28" />
+            </span>
+            <span class="channel-label">GitHub</span>
+            <span class="channel-value">{{ githubDisplay }}</span>
+            <a :href="githubUrl" target="_blank" rel="noopener noreferrer" class="channel-action-btn link-action">
+              Ouvrir le profil ↗
+            </a>
+          </div>
         </div>
 
         <div class="cv-download-cta">
@@ -139,9 +159,15 @@ const copyPhone = async (phoneToCopy) => {
 
 .contact-cards-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
+}
+
+@media (min-width: 580px) {
+  .contact-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .contact-channel-card {

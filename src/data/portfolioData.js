@@ -2,7 +2,9 @@ export const contactInfo = {
   email: 'victorgiroud4@gmail.com',
   phone: '07 67 55 36 10',
   linkedinUrl: 'https://www.linkedin.com/in/victor-giroud-paris',
-  linkedinDisplay: 'victor-giroud-paris'
+  linkedinDisplay: 'victor-giroud-paris',
+  githubUrl: 'https://github.com/vicoescobar',
+  githubDisplay: 'vicoescobar'
 }
 
 export const experiences = [
@@ -93,7 +95,7 @@ export const projects = [
     organization: 'Victor Giroud',
     description: 'Ce portfolio Vue 3 déployé automatiquement sur VPS CloudPanel via GitHub Actions et SSH/rsync à chaque git push, avec routage Nginx SPA et certificat SSL.',
     tags: ['Vue 3', 'Vite', 'CloudPanel', 'GitHub Actions', 'rsync', 'Nginx'],
-    linkText: 'Code GitHub',
+    linkText: 'Voir sur GitHub',
     link: 'https://github.com/vicoescobar/victor-giroud-website'
   }
 ]
