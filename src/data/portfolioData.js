@@ -70,6 +70,15 @@ export const projects = [
     link: '#'
   },
   {
+    title: 'Devil’s Contract — The Last Run',
+    context: 'Projet de jeu vidéo (2 semaines, 02/2026)',
+    organization: 'EPITA (Équipe de 4)',
+    description: 'Jeu d’horreur et d’évasion à la première personne développé sous Unity 6. Face au Diable dans un cimetière infernal, le joueur doit explorer l’environnement pour trouver 2 clés mystiques et s’enfuir vers le Paradis, tout en échappant à une IA ennemie prédatrice (NavMesh, raycasting et jumpscares).',
+    tags: ['Unity 6', 'C#', 'URP', 'IA NavMesh', 'Game Design', 'Audio 3D'],
+    linkText: 'Voir sur GitHub',
+    link: 'https://github.com/vicoescobar/unity-devil-contract'
+  },
+  {
     title: 'Volontari’app — Réseau Social Écologique',
     context: 'Projet libre communicant (03/2026 – 12/2026)',
     organization: 'Projet en équipe de 3',
