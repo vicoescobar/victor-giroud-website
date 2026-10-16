@@ -66,8 +66,8 @@ export const projects = [
     title: 'Outil de gestion des absences',
     context: 'Projet de fin d’étude en entreprise (06/2026 – 12/2026)',
     organization: 'Rectorat de Créteil',
-    description: 'Conception d’un outil web pour faciliter et accélérer considérablement le traitement des remplacements sur l’académie de Créteil, sous strictes contraintes techniques étatiques.',
-    tags: ['Application Web', 'Secteur Public', 'Architecture', 'Gestion de flux'],
+    description: 'Conception d’un outil web pour faciliter et accélérer considérablement le traitement des remplacements sur l’académie de Créteil, incluant le maquettage UI/UX sous Figma et le respect de strictes contraintes techniques étatiques.',
+    tags: ['Application Web', 'Figma', 'UI/UX Design', 'Architecture', 'Secteur Public'],
     linkText: 'Projet État',
     link: '#'
   },
@@ -84,8 +84,8 @@ export const projects = [
     title: 'Volontari’app — Réseau Social Écologique',
     context: 'Projet libre communicant (03/2026 – 12/2026)',
     organization: 'Projet en équipe de 3',
-    description: 'Réseau social sous forme d’application mobile permettant de créer et d’interagir autour d’évènements écologiques et d’initiatives citoyennes.',
-    tags: ['React Native', 'Node.js', 'PostgreSQL', 'Expo'],
+    description: 'Réseau social sous forme d’application mobile permettant de créer et d’interagir autour d’évènements écologiques et d’initiatives citoyennes, du prototypage UI/UX sur Figma au développement full-stack.',
+    tags: ['React Native', 'Node.js', 'PostgreSQL', 'Expo', 'Figma'],
     linkText: 'Voir sur GitHub',
     link: 'https://github.com/Volontariapp'
   },
@@ -93,8 +93,8 @@ export const projects = [
     title: 'Infrastructure & Déploiement Continu',
     context: 'Projet Personnel & Portfolio (2026)',
     organization: 'Victor Giroud',
-    description: 'Ce portfolio Vue 3 déployé automatiquement sur VPS CloudPanel via GitHub Actions et SSH/rsync à chaque git push, avec routage Nginx SPA et certificat SSL.',
-    tags: ['Vue 3', 'Vite', 'CloudPanel', 'GitHub Actions', 'rsync', 'Nginx'],
+    description: 'Ce portfolio Vue 3 déployé en continu sur un serveur VPS dédié (CloudPanel) via GitHub Actions et SSH/rsync. Déclaration et gestion des enregistrements DNS (nom de domaine), routage Nginx SPA et sécurisation SSL.',
+    tags: ['Vue 3', 'Vite', 'VPS', 'Gestion DNS', 'CloudPanel', 'GitHub Actions', 'Nginx'],
     linkText: 'Voir sur GitHub',
     link: 'https://github.com/vicoescobar/victor-giroud-website'
   }
@@ -136,29 +136,37 @@ export const formations = [
 export const skillGroups = [
   {
     category: 'Langages',
-    skills: ['Java', 'JavaScript', 'TypeScript', 'Python', 'C++', 'C', 'C#', 'PHP']
+    skills: ['Java', 'JavaScript', 'TypeScript', 'Python', 'C++', 'C', 'C#', 'PHP', 'SQL', 'HTML5 / CSS3']
   },
   {
     category: 'Frameworks & Libs',
-    skills: ['Vue.js', 'React Native', 'Node.js', 'Quarkus', 'Spring', 'AngularJS', '.NET', 'Expo']
+    skills: ['Vue.js', 'React Native', 'Node.js', 'Quarkus', 'Spring Boot', 'AngularJS', '.NET', 'Expo']
   },
   {
-    category: 'Outils & Systèmes',
-    skills: ['Docker', 'Linux', 'Git & GitHub', 'PostgreSQL', 'MariaDB', 'Unity', 'CloudPanel', 'Nginx']
+    category: 'Systèmes, DevOps & Réseau',
+    skills: ['Linux', 'VPS', 'Gestion DNS & Domaines', 'Docker', 'Git & GitHub', 'CI/CD (GitHub Actions)', 'Nginx', 'CloudPanel']
   },
   {
-    category: 'Spécialités & IA',
-    skills: ['Agents IA', 'Reconnaissance d’images', 'Fine-tuning', 'Microservices', 'PWA']
+    category: 'Données & IA',
+    skills: ['Agents IA', 'Reconnaissance d’images', 'Fine-tuning', 'PostgreSQL', 'MariaDB', 'Microservices', 'PWA']
+  },
+  {
+    category: 'Design & Multimédia',
+    skills: ['Figma (UI/UX)', 'Canva', 'Prototypage & Wireframing', 'Unity 6', 'Game Design', 'Audio 3D']
+  },
+  {
+    category: 'Méthodes & Outils',
+    skills: ['Méthodologie Agile (Scrum)', 'Suite Microsoft 365', 'Gestion de projet', 'Git Workflow', 'Cahier des charges']
   }
 ]
 
 export const softSkills = [
   'Curiosité technique',
-  'Optimisme',
-  'Gestion du stress',
+  'Esprit d’équipe & Collaboration',
+  'Adaptabilité & Rigueur',
   'Créativité',
-  'Convivialité',
-  'Esprit d’équipe'
+  'Gestion du stress',
+  'Optimisme'
 ]
 
 export const languages = [

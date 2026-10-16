@@ -92,6 +92,13 @@ defineProps({
   border-radius: var(--radius-md);
   padding: 1.75rem;
   box-shadow: var(--shadow-xs);
+  transition: all var(--transition-smooth);
+}
+
+.skill-category-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-3px);
 }
 
 .skill-cat-title {
